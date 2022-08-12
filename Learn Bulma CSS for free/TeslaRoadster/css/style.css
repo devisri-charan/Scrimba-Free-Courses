@@ -1,0 +1,110 @@
+.hero{
+    background-image: url("/TeslaRoadster/images/hero-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-foot{
+    padding: 2rem;
+}
+
+.image{
+    width: 6.25rem;
+    height: 1rem;
+}
+
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+    border-left: 1px solid gray;
+}
+
+.d {
+    grid-area: d;
+    border-left: 1px solid gray;
+}
+
+.e {
+    grid-area: e;
+    width: 100%;
+}
+
+
+.grid{
+    width: 768px;;
+    display: grid;
+    grid-template-areas: 
+        ". a . ."
+        "b c d e";
+    gap: 1rem;
+}
+
+.center, .center-column, .top, .right, .bottom, .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-column{
+    flex-direction: column;
+}
+
+.top{
+    align-items: flex-start;
+}
+
+.right{
+    justify-content: flex-end;
+}
+
+.bottom{
+    align-items: flex-end;
+}
+
+.left{
+    justify-content: flex-start;
+}
+
+.single-spaced, .single-spaced * {
+    line-height: 1;
+}
+
+@media (max-width: 1024px){
+    .hero{
+        background-image: url("/TeslaRoadster/images/hero-2.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .desktop{
+        display: none;
+    }
+}
+
+@media (max-width:  768px){
+    .hero{
+        background-image: url("/TeslaRoadster/images/hero-3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 512px) {
+    .grid{
+        grid-template-areas: 
+            ". a ."
+            "b c d"
+            ". e .";
+    }
+}

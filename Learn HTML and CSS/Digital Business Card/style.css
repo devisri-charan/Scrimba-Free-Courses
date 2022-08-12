@@ -1,0 +1,46 @@
+body{
+    margin: 40px;
+}
+
+.dp{
+    width: 175px;
+}
+
+.card{
+    width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #2b2839;
+    background-color: #50FFB1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 8px solid #4D685A;
+    border-radius: 16px;
+    box-shadow: 0 0 16px #2b2839;
+    animation-name: card-animation;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    /* transform: translate(50px,100px); */
+    /* transform: rotate(20deg); */
+    /* transform: skewX(20deg); */
+    /* transform: matrix(1, -0.3, 0, 1, 0, 0); */
+    transition: .5s ease-in-out;
+}
+
+.card:hover::after{
+    transform: rotateX(180deg);
+}
+
+/* @keyframes card-animation{
+    0% {background-color: #50FFB1; margin-left: 0px; margin-top: 0px;}
+    25% {background-color: #4D685A; margin-left: 200px; margin-top: 0px;}
+    50% {background-color: #4D687A; margin-left: 200px; margin-top: 200px;}
+    50% {background-color: #4C987A; margin-left: 0px; margin-top: 200px;}
+    100% {background-color: bisque; margin-left: 0px; margin-top: 0px;}
+} */

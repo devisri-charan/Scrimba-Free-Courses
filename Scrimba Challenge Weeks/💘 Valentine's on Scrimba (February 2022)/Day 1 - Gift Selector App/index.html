@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Challenge Week 💘</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@500;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Gift Selector 💝</h1>
+    <p class="result" id="result">Total gift cost: <span id="cost-el">...</span> </p>
+    <form id="form">
+        <label for="food-select">Select food:</label>
+        <select id="food-select">
+            <option value="">--Please select an option--</option>
+            <option value="5">🍓 strawberries - $5</option>
+            <option value="10">🍫 chocolate - $10</option>
+            <option value="20">🧁 cupcakes - $20</option>
+        </select>
+        <br>
+        <label for="transport-select">Select transport:</label>
+        <select id="transport-select">
+            <option value="">--Please select an option--</option>
+            <option value="5">🛼 rollerskates - $5</option>
+            <option value="50">🚘 limo - $50</option>
+            <option value="500">🚁 helicopter - $500</option>
+        </select>
+        <br>
+        <div>
+            <label for="balloon-checkbox">Add balloons?🎈<span id="balloon-check">+ $10</span></label>
+            <input type="checkbox" name="balloon-checkbox" id="balloon-checkbox">
+        </div>
+        <button id="btn" type="button">Calculate</button>
+    </form>
+    <button class="cta" id="reset" type="button">Reset</button>
+    <div id="error">
+        <p>Please select both type of food and transport</p>
+        <button id="error-btn">Roger!</button>
+    </div>
+</body>
+
+</html>

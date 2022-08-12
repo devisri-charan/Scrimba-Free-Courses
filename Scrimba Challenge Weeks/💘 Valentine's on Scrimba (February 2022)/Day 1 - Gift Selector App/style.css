@@ -1,0 +1,119 @@
+:root {
+    --yellow: #FBF3AB;
+    --light-pink: #F0B9DD;
+    --lavender: #C7B9FF;
+    --deep-pink: #F04C86;
+    --raisin: #2B283A;
+    --white: #fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+    font-family: 'Karla', sans-serif;
+    color: var(--raisin);
+    background-color: var(--yellow);
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form *,
+.cta{
+    padding: .5rem;
+    font-size: 1.3rem;
+    font-family: inherit;
+    /* text-align: center; */
+}
+
+form label,
+form button{
+    font-weight: 700;
+}
+
+form *:not(label):not(div):not(span),
+.result,
+.cta{
+    box-sizing: border-box;
+    box-shadow: #0000001a 0px 4px 6px -1px, #0000000f 0px 2px 4px -1px;
+    border: none;
+    border-radius: 5px;
+}
+
+select{
+    background: var(--white);
+    color: var(--raisin);
+}
+
+.result{
+    background: var(--light-pink);
+    color: var(--raisin);
+    min-width: 270px;
+    max-width: 5ch;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.result span{
+    color: var(--deep-pink);
+    font-weight: 700;
+}
+
+button{
+    color: var(--white);
+    background-color: var(--deep-pink);
+    margin-bottom: 1rem;
+    font-family: inherit;
+}
+
+button:hover,
+button:focus{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#balloon-check{
+    display: none;
+}
+
+
+#error{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    color: white;
+    background-color: #000000e6;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#error p {
+    font-size: 1.3rem;
+}
+
+#error button {
+    height: 50px;
+    width: 100px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+}

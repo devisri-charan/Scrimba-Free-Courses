@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Custom JS -->
+  <script src="navigation.js" defer></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  
+  <title>Space Tourism</title>
+</head>
+<body class="technology">
+  <header class="primary-header flex">
+    <div>
+      <img src="assets/shared/logo.svg" alt="logo" class="logo">
+    </div>
+
+    <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+      <span class="sr-only" aria-expanded="false">Menu</span>
+    </button>
+
+    <nav>
+      <ul id="primary-navigation" class="primary-navigation underline-indicators flex">
+        <li>
+          <a class="uppercase text-white letter-spacing-2 ff-sans-cond"
+            href="index.html">
+            <span>00</span>Home
+          </a>
+        </li>
+
+        <li>
+          <a class="uppercase text-white letter-spacing-2 ff-sans-cond"
+            href="destination-moon.html">
+            <span>01</span>Destination
+          </a>
+        </li>
+
+        <li>
+          <a class="uppercase text-white letter-spacing-2 ff-sans-cond"
+            href="crew-commander.html">
+            <span>02</span>Crew
+          </a>
+        </li>
+        
+        <li class="active">
+          <a class="uppercase text-white letter-spacing-2 ff-sans-cond"
+            href="technology-vehicle.html">
+            <span>03</span>Technology
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="grid-container--technology grid-container flow">
+    <h1 class="numbered-title">
+      <span aria-hidden="true">03</span>Space launch 101
+    </h1>
+
+    <div class="numbered-indicators">
+      <button onclick="window.location.href = 'technology-vehicle.html'" aria-selected="false" class="uppercase ff-serif fs-500 bg-dark text-white">1</button>
+      <button onclick="window.location.href = 'technology-spaceport.html'" aria-selected="false" class="uppercase ff-serif fs-500 bg-dark text-white">2</button>
+      <button onclick="window.location.href = 'technology-capsule.html'" aria-selected="true" class="uppercase ff-serif fs-500 bg-dark text-white">3</button>
+    </div>
+
+    <article class="technology-details flow">
+      <p class="uppercase text-light ff-sans-cond">The terminology...</p> 
+      <h2 class="uppercase ff-serif fs-600">Space capsule</h2>
+      <p class="text-light">
+        A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+        capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+        you'll spend your time during the flight. It includes a space gym, cinema, 
+        and plenty of other activities to keep you entertained.
+      </p> 
+    </article>
+
+    <picture>
+      <source media="(min-width: 45rem)" srcset="assets/technology/image-space-capsule-portrait.jpg">
+      <img src="assets/technology/image-space-capsule-landscape.jpg" alt="Space capsule">
+    </picture>
+
+  </main>
+  
+</body>
+</html>

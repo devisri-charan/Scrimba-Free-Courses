@@ -1,0 +1,19 @@
+body{
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1{
+    font-size: 60px;
+}
+
+h1,h2{
+    color: #d33d1f;
+}
+
+img{
+    width: 50%;
+}
+
+p,li{
+    font-family: initial;
+}

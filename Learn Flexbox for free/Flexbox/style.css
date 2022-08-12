@@ -1,0 +1,29 @@
+body{
+    background-color: burlywood;
+    margin: 10px;
+}
+
+.container{
+    border: 5px solid red;
+    display: flex;
+    align-items: center;
+}
+
+.container div{
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container div:nth-child(1){
+    background-color: aliceblue;
+}
+
+.container div:nth-child(2){
+    background-color: navajowhite;
+}
+
+.container div:nth-child(3){
+    background-color: lightblue;
+}

@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Spinnaker', sans-serif;
+}
+
+.hero{
+    background-image: url("images/warangal.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    background-color: #2B2839;
+    color: #F1DED0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin: 120px 0 28px 0;
+}
+
+h2{
+    background-color: #F1DED0;
+    color: #2B2839;
+    padding: 10px 16px;
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+.activities{
+    margin-top: 0;
+    background-color: #F1DED0;
+    color: #2B2839;
+}
+
+#attractions{
+    background-color: #F1DED0;
+    padding: 28px;
+}
+
+.places-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.places{
+    padding: 20px;
+    width: 30%;
+    line-height: 1.5;
+}
+
+.places > img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+.guide{
+    display: flex;
+    align-items: center;
+    margin: 50px auto;
+    border-bottom: 10px solid #2B2839;
+    padding: 50px;
+    width: 500px;
+    height: 200px;
+    background-color: #F1DED0;
+    border-radius: 8px;
+    color: #2B2839;
+    filter: drop-shadow(5px 5px 5px #2B2839);
+}
+
+.guide-details{
+    margin: 20px;
+    line-height: 1.5;
+}
+
+#italic{
+    font-style: italic;
+}
+
+.guide-img{
+    width: 200px;
+    padding: 18px;
+}

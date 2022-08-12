@@ -1,0 +1,47 @@
+body{
+    background-image: url(/images/station.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+
+h1{
+    margin: 10px 0;
+}
+
+h2{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+button{
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    color: white;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#increment-btn{
+    background-color: darkred;
+}
+
+#save-btn{
+    background-color: darkgreen;
+}
+
+#reset-btn{
+    background-color: black;
+}
+
+.container{
+    margin: 10% auto;
+}
